@@ -1,0 +1,108 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1565427167526-c9d39f300959?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=412&q=80);
+  margin: 0;
+}
+
+.LogoLinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  background-image: url(https://images.unsplash.com/photo-1565427167526-c9d39f300959?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=412&q=80);
+}
+.border {
+  border-radius: 50%;
+}
+.logo {
+  background-image: url(https://images.unsplash.com/photo-1565427167526-c9d39f300959?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=412&q=80);
+  border: 3px solid black;
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  max-width: 150px;
+  color: rgb(2, 2, 29);
+}
+.Logos {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+.image {
+  display: flex;
+  background-image: url(https://media.istockphoto.com/photos/chess-pieces-on-the-wood-stair-by-ranking-picture-id1367004603?s=612x612);
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 60vh;
+  min-width: 80vh;
+}
+.BixBoxes3 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: 40px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.MyPhotos {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy9YmGDgP2p1FdXGLEP_QesxQiEg88kCjunHENiOT81G-FZBGYm324HxpratLnNOV3Vi8&usqp=CAU);
+  border: 5px solid black;
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  position: relative;
+}
+
+.MyPhotos img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-55%, -55%);
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.burger {
+  display: none;
+  height: 60px;
+  justify-self: end;
+}
+
+.Bottom {
+  display: flex;
+  background-color: rgb(3, 3, 37);
+  min-height: 50px;
+  justify-content: center;
+  align-items: center;
+  min-width: 1000%;
+}
+a,
+h2,
+p {
+  color: rgb(3, 3, 37);
+}
+
+@media screen and (max-width: 750px) {
+  .Logos {
+    display: none;
+  }
+  .BixBoxes3 {
+    grid-template-columns: repeat(2, auto);
+  }
+  .burger {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Mobile {
+    display: block;
+  }
+  .BixBoxes3 {
+    grid-template-columns: repeat(1, auto);
+  }
+}
